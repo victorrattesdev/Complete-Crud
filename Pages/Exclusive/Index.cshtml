@@ -1,0 +1,55 @@
+@page
+@model Crud.Pages_Exclusive.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="text-center">CRUD - Exclusivos</h1>
+
+<p class="text-center">
+    <a asp-page="Create">Criar novo exclusivo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Exclusive[0].Movie)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Exclusive[0].StartExclusive)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Exclusive[0].EndExclusive)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Exclusive[0].ClientId)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Exclusive) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Movie)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartExclusive)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EndExclusive)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClientId)
+            </td>
+            <td>
+                <button type="button" class="btn btn-warning"><a asp-page="./Edit" asp-route-id="@item.Id">Edit</a></button>
+                <button type="button" class="btn btn-info"><a asp-page="./Details" asp-route-id="@item.Id">Details</a></button>
+                <button type="button" class="btn btn-danger"><a asp-page="./Delete" asp-route-id="@item.Id">Delete</a></button>
+                
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
