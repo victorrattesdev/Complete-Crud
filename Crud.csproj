@@ -27,4 +27,8 @@
     <Compile Remove="Models\Subscribers.cs" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Remove="wwwroot\logo.jpg" />
+  </ItemGroup>
+
 </Project>

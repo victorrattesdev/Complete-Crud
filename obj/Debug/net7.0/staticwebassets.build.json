@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Y19+iYDNGCtkX0X3tmIdHgYqGkz0BxnpgwKW2teC0fs=",
+  "Hash": "fINhZ1/izC+Ea4FqGkJe6KKnogT9OQvaAeT+NVnxfgU=",
   "Source": "Crud",
   "BasePath": "_content/Crud",
   "Mode": "Default",
@@ -2091,12 +2091,12 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\victor.rattes\\Crud\\wwwroot\\logo.jpg",
+      "Identity": "C:\\Users\\victor.rattes\\Crud\\wwwroot\\logo.png",
       "SourceId": "Crud",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\victor.rattes\\Crud\\wwwroot\\",
       "BasePath": "_content/Crud",
-      "RelativePath": "logo.jpg",
+      "RelativePath": "logo.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2105,7 +2105,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logo.jpg"
+      "OriginalItemSpec": "wwwroot\\logo.png"
     }
   ]
 }

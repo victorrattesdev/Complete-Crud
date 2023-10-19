@@ -245,8 +245,8 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\victor.rattes\\Crud\\wwwroot\\logo.jpg",
-      "PackagePath": "staticwebassets\\logo.jpg"
+      "Id": "C:\\Users\\victor.rattes\\Crud\\wwwroot\\logo.png",
+      "PackagePath": "staticwebassets\\logo.png"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Crud.Microsoft.AspNetCore.StaticWebAssets.props",

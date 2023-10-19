@@ -15,12 +15,11 @@ public class Exclusive
     [DisplayName("Título")]
     public string Movie { get; set; } = string.Empty;
     
-    [DataType(DataType.DateTime)]
-    // [GreaterThanToday]
+    [DataType(DataType.Date)]
     [DisplayName("Início do acesso exclusivo")]
     public DateTime StartExclusive { get; set; }
     
-    [DataType(DataType.DateTime)]
+    [DataType(DataType.Date)]
     [DisplayName("Fim do acesso exclusivo")]
     public DateTime EndExclusive { get; set; }
     

@@ -1,6 +1,9 @@
 html {
   font-size: 14px;
 }
+*{
+  font-family: 'Poppins', sans-serif;
+}
 
 @media (min-width: 768px) {
   html {
@@ -19,4 +22,32 @@ html {
 
 body {
   margin-bottom: 60px;
+}
+
+.row{
+  font-size:18px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.btn-danger{
+  background-color: red;
+}
+
+.control-label{
+  font-size: 20px;
+  
+}
+
+a:hover{
+  background-color: #0d6efd;
+  border-radius: 10px;
+}
+
+a{
+  border-radius: 10px;
+}
+
+.navbar{
+  background-color: #1c1c1c;
 }
