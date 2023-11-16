@@ -51,3 +51,13 @@ a{
 .navbar{
   background-color: #1c1c1c;
 }
+#edit:hover{
+  background-color: whitesmoke;
+}
+#padrao:hover{
+  background-color: transparent;
+}
+.col-sm-2{
+  justify-content: center;
+  align-content: center;
+}

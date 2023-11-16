@@ -16,17 +16,17 @@ public class Exclusive
     public string Movie { get; set; } = string.Empty;
     
     [DataType(DataType.Date)]
-    [DisplayName("Início do acesso exclusivo")]
+    [DisplayName("Início da promoção")]
     public DateTime StartExclusive { get; set; }
     
     [DataType(DataType.Date)]
-    [DisplayName("Fim do acesso exclusivo")]
+    [DisplayName("Fim da promoção")]
     public DateTime EndExclusive { get; set; }
     
-    [DisplayName("Cliente")]
-    [Required(ErrorMessage = "Cliente inválido e/ou não assinante.")]
-    public int ClientId { get; set; }
+    [DisplayName("Generô do Filme")]
+    [Required(ErrorMessage = "Gênero inválido e/ou não existente.")]
+    public string? Gender { get; set; }
     
-    public Clients? Clients { get; set; }
+
 
 }

@@ -44,9 +44,9 @@
                 @Html.DisplayFor(modelItem => item.Gender)
             </td>
             <td>
-                <button type="button" class="btn btn-warning btn-sm"><a asp-page="./Edit" asp-route-id="@item.Id">Edit</a></button>
-                <button type="button" class="btn btn-info btn-sm"><a asp-page="./Details" asp-route-id="@item.Id">Details</a></button> |
-                <button type="button" class="btn btn-danger btn-sm"><a asp-page="./Delete" asp-route-id="@item.Id">Delete</a></button>
+                <button type="button" class="btn btn-warning btn-sm" id="edit"><a id="padrao" asp-page="./Edit" asp-route-id="@item.Id">Edit</a></button>
+                <button type="button" class="btn btn-info btn-sm" id="edit"><a id="padrao" asp-page="./Details" asp-route-id="@item.Id">Details</a></button> 
+                <button type="button" class="btn btn-danger btn-sm" id="edit"><a id="padrao" asp-page="./Delete" asp-route-id="@item.Id">Delete</a></button>
             </td>
         </tr>
 }

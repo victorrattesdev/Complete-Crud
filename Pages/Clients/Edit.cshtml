@@ -5,43 +5,37 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
-
-<h4>Clients</h4>
+<h1 style="text-align: center">Editar informações do cliente</h1>
+<br/>
 <hr />
-<div class="row">
+<div class="row text-center">
     <div class="col-md-4">
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Clients.Id" />
-            <div class="form-group">
-                <label asp-for="Clients.Name" class="control-label"></label>
-                <input asp-for="Clients.Name" class="form-control" />
+            <div class="form-group text-center mb-3">
+                <input asp-for="Clients.Name" placeholder="Informe seu nome completo" class="form-control" />
                 <span asp-validation-for="Clients.Name" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Clients.Email" class="control-label"></label>
-                <input asp-for="Clients.Email" class="form-control" />
+            <div class="form-group text-center mb-3">
+                <input asp-for="Clients.Email" placeholder="Informe seu email completo" class="form-control" />
                 <span asp-validation-for="Clients.Email" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Clients.Year" class="control-label"></label>
-                <input asp-for="Clients.Year" class="form-control" />
+            <div class="form-group text-center mb-3">
+                <input asp-for="Clients.Year" placeholder="Informe sua data de nascimento:" class="form-control" />
                 <span asp-validation-for="Clients.Year" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Clients.Gender" class="control-label"></label>
-                <input asp-for="Clients.Gender" class="form-control" />
+            <div class="form-group text-center mb-3">
+                <input asp-for="Clients.Gender" placeholder="Informe seu gênero de filme favorito" class="form-control" />
                 <span asp-validation-for="Clients.Gender" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+            <br/>
+            <div class="form-group text-center mb-3">
+                <input type="submit" value="Salvar" class="btn btn-primary" id="saveButton"/>
+                <a href="http://localhost:5233/Clients" class="btn btn-danger">Retornar ao início</a>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-page="./Index">Back to List</a>
-</div>
 

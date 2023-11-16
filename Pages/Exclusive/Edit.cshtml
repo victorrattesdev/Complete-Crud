@@ -5,37 +5,32 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
-
-<h4>Exclusive</h4>
+<h1 style="text-align: center;">Editar promoção</h1>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Exclusive.Id" />
-            <div class="form-group">
-                <label asp-for="Exclusive.Movie" class="control-label"></label>
-                <input asp-for="Exclusive.Movie" class="form-control" />
+            <div class="form-group text-center mb-3">
+                <input asp-for="Exclusive.Movie" placeholder="Insira o nome do filme desejado" class="form-control" />
                 <span asp-validation-for="Exclusive.Movie" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Exclusive.StartExclusive" class="control-label"></label>
-                <input asp-for="Exclusive.StartExclusive" class="form-control" />
+            <div class="form-group text-center mb-3">
+                <input asp-for="Exclusive.StartExclusive" placeholder="Insira a data de início da promoção" class="form-control" />
                 <span asp-validation-for="Exclusive.StartExclusive" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Exclusive.EndExclusive" class="control-label"></label>
-                <input asp-for="Exclusive.EndExclusive" class="form-control" />
+            <div class="form-group text-center mb-3">
+                <input asp-for="Exclusive.EndExclusive" placeholder="Insira a data de término da promoção" class="form-control" />
                 <span asp-validation-for="Exclusive.EndExclusive" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Exclusive.ClientId" class="control-label"></label>
-                <input asp-for="Exclusive.ClientId" class="form-control" />
-                <span asp-validation-for="Exclusive.ClientId" class="text-danger"></span>
+            <div class="form-group text-center mb-3">
+                <input asp-for="Exclusive.Gender" placeholder="Insira o gênero do filme" class="form-control" />
+                <span asp-validation-for="Exclusive.Gender" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Salvar" class="btn btn-primary" />
+                 <a href="http://localhost:5233/Exclusive" class="btn btn-danger">Retornar ao início</a>
             </div>
         </form>
     </div>
